@@ -1,6 +1,7 @@
-# Custom Zotero translators (RT.com and TASS.com)
+# Custom Zotero translators (RT.com, TASS.com, and SputnikGlobe.com)
 
-These two small files teach Zotero how to save articles from **RT (rt.com)** and **TASS (tass.com)**
+These three small files teach Zotero how to save articles from **RT (rt.com)**, **TASS (tass.com)**,
+and **Sputnik International (sputnikglobe.com)**
 properly: with the headline, author, date, section, and tags filled in, instead of a bare "Web Page".
 Once installed, saving an article works exactly like saving from any other news site: click the
 Zotero button in your browser.
@@ -9,8 +10,10 @@ Zotero button in your browser.
 |---|---|---|
 | `RT.com.js` | https://www.rt.com | Articles saved as **Newspaper Article** items; RT shows (video programs) saved as **TV Broadcast** items; a pick-list of stories on section and search pages |
 | `TASS.com.js` | https://tass.com | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page, section pages, and search pages |
+| `SputnikGlobe.com.js` | https://sputnikglobe.com | Articles, videos, infographics, and long reads saved as **Newspaper Article** items; a pick-list of stories on the home page and on section, tag, archive, and search pages |
 
-The Spanish, French, Arabic, and Russian editions of these sites are not covered.
+The Spanish, French, Arabic, and Russian editions of these sites are not covered, and neither are
+Sputnik's other regional editions, which live on other web addresses.
 
 ## Before you start
 
@@ -26,7 +29,8 @@ Open Zotero at least once so that it creates its folders.
 
 ### Step 1: Download the file
 
-1. On this page, click the file you want: **`RT.com.js`** or **`TASS.com.js`**.
+1. On this page, click the file you want: **`RT.com.js`**, **`TASS.com.js`**, or
+   **`SputnikGlobe.com.js`**.
 2. On the page that opens, look for the small **download icon** (an arrow pointing down into a tray)
    near the top right of the file, labeled **Download raw file** when you hover over it. Click it.
 3. The file lands in your **Downloads** folder. Make sure its name still ends in **`.js`**
@@ -68,7 +72,8 @@ Zotero must be open on your computer while you do this.
 
 ### Step 6: Try it
 
-1. With Zotero open, go to any article on https://www.rt.com or https://tass.com.
+1. With Zotero open, go to any article on https://www.rt.com, https://tass.com, or
+   https://sputnikglobe.com.
 2. Look at the Zotero button in the toolbar. It should now show a **newspaper icon** instead of a
    plain page icon. (Reload the page if it has not changed yet.)
 3. Click the button. The article appears in your Zotero library with its title, date, and other
@@ -84,6 +89,10 @@ list of all the stories on that page with checkboxes, so you can save several at
   web page itself (this is how the Zotero Connector works, not something these files can change).
   If you need the saved page too, open each article and save it individually, or ask your
   instructor about the "Add Missing Snapshots" plugin, which adds the page copies afterwards.
+- **On Sputnik, scrolling past the end of a story loads the next one on the same page.** Zotero
+  records the story whose address is showing in the browser's address bar. The saved page copy
+  contains every story loaded so far, so for a clean copy save before you scroll on, or open the
+  story on its own first.
 - **Zotero must be running** on your computer when you save from the browser.
 - **If you ever click "Reset Translators"** in Zotero's Advanced settings, these files are deleted
   along with everything else in the folder, and you will need to install them again.
@@ -92,7 +101,7 @@ list of all the stories on that page with checkboxes, so you can save several at
 
 | What you see | What to check |
 |---|---|
-| The Zotero button still shows a plain page icon on an RT or TASS article | Confirm the file is inside the `translators` folder and its name ends in `.js`; confirm you fully quit and reopened Zotero; do Step 5 again; reload the page |
+| The Zotero button still shows a plain page icon on an RT, TASS, or Sputnik article | Confirm the file is inside the `translators` folder and its name ends in `.js`; confirm you fully quit and reopened Zotero; do Step 5 again; reload the page |
 | "Update Translators" seems to do nothing | Make sure the Zotero desktop app is open, then try again |
 | You cannot find the Options or Preferences entry | In Chrome, you can also open `chrome://extensions`, find Zotero Connector, click **Details**, then **Extension options**. In Firefox, open the menu → **Add-ons and themes**, find Zotero Connector, and open its **Preferences** tab |
 | Saving works but no page copy is attached | You saved several items at once; see "Things to know" above |

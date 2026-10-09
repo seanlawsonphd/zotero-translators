@@ -14,16 +14,36 @@ not covered.
 
 ## Install
 
-1. Copy the `.js` files into the `translators` folder of your Zotero data directory
-   (Zotero's Settings → Advanced → Files and Folders shows where it is). On macOS, `./install.sh`
-   finds the folder and copies every translator in this repo; it refuses to overwrite an existing
-   file unless you pass `--force`.
-2. Restart Zotero. Translators are read at startup.
-3. In the browser Connector's preferences, open Advanced and click **Update Translators**, then
+### A single translator
+
+1. Find your Zotero data directory: in Zotero, Settings → Advanced → Files and Folders →
+   **Show Data Directory**. Translators live in its `translators` subfolder.
+2. Download the file you want from this repo (open it on GitHub and use **Download raw file**, or
+   fetch it from the command line) and put it in that `translators` folder. For example, on macOS
+   with the default data directory:
+
+   ```bash
+   curl -L -o ~/Zotero/translators/RT.com.js \
+     https://raw.githubusercontent.com/seanlawsonphd/zotero-translators/main/RT.com.js
+   ```
+
+   With a clone of this repo, `./install.sh RT.com.js` does the same and finds the data directory
+   for you (add `--force` to replace an older copy).
+3. Restart Zotero. Translators are read at startup.
+4. In the browser Connector's preferences, open Advanced and click **Update Translators**, then
    reload the site. The Connector icon changes from the generic page icon to a newspaper icon.
 
-Keep this repo as your backup copy: Zotero's **Reset Translators** button wipes the `translators`
-folder and re-downloads only the official set.
+### All translators in this repo
+
+Clone the repo and run `./install.sh` (macOS; it locates the data directory from Zotero's profile
+and refuses to overwrite existing files unless you pass `--force`), or copy all the `.js` files into
+the `translators` folder by hand. Then restart Zotero and update the Connector's translators as above.
+
+### Keeping them
+
+Keep this repo (or your downloaded copies) as a backup: Zotero's **Reset Translators** button wipes
+the `translators` folder and re-downloads only the official set. Installed custom translators are
+not touched by Zotero's normal translator updates.
 
 ## Known Connector limitation
 

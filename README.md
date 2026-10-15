@@ -8,7 +8,7 @@ Zotero button in your browser.
 
 | File | Website | What you get |
 |---|---|---|
-| `RT.com.js` | https://rt-english.com (formerly www.rt.com, which now redirects there) | Articles saved as **Newspaper Article** items; RT shows (video programs) saved as **TV Broadcast** items; a pick-list of stories on section and search pages |
+| `RT.com.js` | RT's English site at any address: https://rt-english.com today, formerly www.rt.com | Articles saved as **Newspaper Article** items; RT shows (video programs) saved as **TV Broadcast** items; a pick-list of stories on section and search pages |
 | `TASS.com.js` | https://tass.com | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page, section pages, and search pages |
 | `SputnikGlobe.com.js` | https://sputnikglobe.com | Articles, videos, infographics, and long reads saved as **Newspaper Article** items; a pick-list of stories on the home page and on section, tag, archive, and search pages |
 

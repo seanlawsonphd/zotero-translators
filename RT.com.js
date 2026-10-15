@@ -2,14 +2,14 @@
 	"translatorID": "be52e86f-7165-4ae6-bb6f-5da62da855de",
 	"label": "RT.com",
 	"creator": "Sean Lawson",
-	"target": "^https?://(www\\.)?(rt\\.com|rt-english\\.com)/",
+	"target": "^https?://([^/]*[.-])?rt([.-][^/]*)?/",
 	"minVersion": "5.0",
 	"maxVersion": "",
 	"priority": 100,
 	"inRepository": true,
 	"translatorType": 4,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2026-10-15 17:00:15"
+	"lastUpdated": "2026-10-15 17:05:12"
 }
 
 /*
@@ -35,15 +35,22 @@
 	***** END LICENSE BLOCK *****
 */
 
-// Articles live at https://rt-english.com/<section>/<id>-<slug>/ and show
-// episodes at https://rt-english.com/shows/<program>/<id>-<slug>/. The site
-// moved there from www.rt.com in October 2026; old links redirect.
-const ARTICLE_URL_RE = /^https?:\/\/(?:www\.)?(?:rt\.com|rt-english\.com)\/(?:[a-z-]+\/)+\d{5,}-[^/?#]+/i;
+// RT moves domains (www.rt.com became rt-english.com in October 2026), so the
+// target accepts any host with "rt" as a word in it, and detectWeb confirms
+// from the page itself that this is RT's English site. Articles live at
+// /<section>/<id>-<slug>/ and show episodes at /shows/<program>/<id>-<slug>/.
+const ARTICLE_URL_RE = /^https?:\/\/[^/]+\/(?:[a-z-]+\/)+\d{5,}-[^/?#]+/i;
+
+function isRT(doc) {
+	return attr(doc, 'meta[name="twitter:site"]', 'content') == '@RT_com'
+		|| attr(doc, 'meta[property="og:site_name"]', 'content') == 'RT International';
+}
 
 // Embedded Metadata
 const EM_TRANSLATOR_ID = '951c027d-74ac-47d4-a107-9c3069ab7b48';
 
 function detectWeb(doc, url) {
+	if (!isRT(doc)) return false;
 	if (ARTICLE_URL_RE.test(url) && (doc.querySelector('h1.article__heading') || getLinkedData(doc))) {
 		return url.includes('/shows/') ? 'tvBroadcast' : 'newspaperArticle';
 	}
@@ -60,6 +67,8 @@ function getSearchResults(doc, checkOnly) {
 	for (let row of rows) {
 		let href = row.href;
 		if (!ARTICLE_URL_RE.test(href) || items[href]) continue;
+		// Only this site's own stories, not links out to other sites
+		if (row.hostname != doc.location.hostname) continue;
 		// Story cards wrap the headline and a summary in a single link, so
 		// prefer the headline element when there is one
 		let title = linkText(row.querySelector('.card__heading, .list-card__content--title') || row);
@@ -348,6 +357,11 @@ var testCases = [
 				"seeAlso": []
 			}
 		]
+	},
+	{
+		"type": "web",
+		"url": "https://rt-english.com/search?q=nato",
+		"items": "multiple"
 	}
 ]
 /** END TEST CASES **/

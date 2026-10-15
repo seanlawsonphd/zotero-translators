@@ -9,7 +9,7 @@
 	"inRepository": true,
 	"translatorType": 4,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2026-10-09 23:33:32"
+	"lastUpdated": "2026-10-10 00:57:12"
 }
 
 /*
@@ -49,6 +49,12 @@ function detectWeb(doc, url) {
 	}
 	else if (getSearchResults(doc, true)) {
 		return 'multiple';
+	}
+	// The search page arrives with an empty list that a script fills in
+	// afterwards, so have detection run again once the results are there
+	let results = doc.querySelector('.list-search');
+	if (results) {
+		Z.monitorDOMChanges(results, { childList: true });
 	}
 	return false;
 }
@@ -380,6 +386,11 @@ var testCases = [
 	{
 		"type": "web",
 		"url": "https://sputnikglobe.com/search/?query=hormuz",
+		"items": "multiple"
+	},
+	{
+		"type": "web",
+		"url": "https://sputnikglobe.com/search/?query=OpenAI",
 		"items": "multiple"
 	}
 ]

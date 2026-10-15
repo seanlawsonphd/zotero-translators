@@ -2,14 +2,14 @@
 	"translatorID": "be52e86f-7165-4ae6-bb6f-5da62da855de",
 	"label": "RT.com",
 	"creator": "Sean Lawson",
-	"target": "^https?://(www\\.)?rt\\.com/",
+	"target": "^https?://(www\\.)?(rt\\.com|rt-english\\.com)/",
 	"minVersion": "5.0",
 	"maxVersion": "",
 	"priority": 100,
 	"inRepository": true,
 	"translatorType": 4,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2026-10-09 17:01:48"
+	"lastUpdated": "2026-10-15 17:00:15"
 }
 
 /*
@@ -35,9 +35,10 @@
 	***** END LICENSE BLOCK *****
 */
 
-// Articles live at https://www.rt.com/<section>/<id>-<slug>/ and show
-// episodes at https://www.rt.com/shows/<program>/<id>-<slug>/
-const ARTICLE_URL_RE = /^https?:\/\/(?:www\.)?rt\.com\/(?:[a-z-]+\/)+\d{5,}-[^/?#]+/i;
+// Articles live at https://rt-english.com/<section>/<id>-<slug>/ and show
+// episodes at https://rt-english.com/shows/<program>/<id>-<slug>/. The site
+// moved there from www.rt.com in October 2026; old links redirect.
+const ARTICLE_URL_RE = /^https?:\/\/(?:www\.)?(?:rt\.com|rt-english\.com)\/(?:[a-z-]+\/)+\d{5,}-[^/?#]+/i;
 
 // Embedded Metadata
 const EM_TRANSLATOR_ID = '951c027d-74ac-47d4-a107-9c3069ab7b48';
@@ -201,76 +202,7 @@ function linkText(link) {
 var testCases = [
 	{
 		"type": "web",
-		"url": "https://www.rt.com/news/646824-october-7-israel-elections/",
-		"items": [
-			{
-				"itemType": "newspaperArticle",
-				"title": "The October 7 survivors divided on who should rule Israel",
-				"creators": [
-					{
-						"firstName": "Elizabeth",
-						"lastName": "Blade",
-						"creatorType": "author"
-					}
-				],
-				"date": "2026-10-07",
-				"abstractNote": "Three years after the attack, residents near Gaza are torn between demanding Netanyahu’s departure and backing an even harder right",
-				"language": "en",
-				"libraryCatalog": "www.rt.com",
-				"publicationTitle": "RT",
-				"section": "World News",
-				"url": "https://www.rt.com/news/646824-october-7-israel-elections/",
-				"attachments": [
-					{
-						"title": "Snapshot",
-						"mimeType": "text/html"
-					}
-				],
-				"tags": [
-					{
-						"tag": "Feature"
-					}
-				],
-				"notes": [],
-				"seeAlso": []
-			}
-		]
-	},
-	{
-		"type": "web",
-		"url": "https://www.rt.com/shows/crosstalk/646911-international-law-naked-aggression/",
-		"items": [
-			{
-				"itemType": "tvBroadcast",
-				"title": "Surviving empire",
-				"creators": [],
-				"date": "2026-10-09",
-				"abstractNote": "Everything is coming apart at the seams Once long-held assumptions about the international order no longer apply",
-				"language": "en",
-				"libraryCatalog": "www.rt.com",
-				"network": "RT",
-				"programTitle": "CrossTalk",
-				"url": "https://www.rt.com/shows/crosstalk/646911-international-law-naked-aggression/",
-				"attachments": [
-					{
-						"title": "Snapshot",
-						"mimeType": "text/html"
-					}
-				],
-				"tags": [],
-				"notes": [],
-				"seeAlso": []
-			}
-		]
-	},
-	{
-		"type": "web",
-		"url": "https://www.rt.com/news/",
-		"items": "multiple"
-	},
-	{
-		"type": "web",
-		"url": "https://www.rt.com/russia/646973-montenegro-russian-blogger-detained/",
+		"url": "https://rt-english.com/russia/646973-montenegro-russian-blogger-detained/",
 		"items": [
 			{
 				"itemType": "newspaperArticle",
@@ -279,10 +211,10 @@ var testCases = [
 				"date": "2026-10-09",
 				"abstractNote": "Montenegrin authorities reportedly suspect the Telegram channel Rybar of “hybrid activity”",
 				"language": "en",
-				"libraryCatalog": "www.rt.com",
+				"libraryCatalog": "rt-english.com",
 				"publicationTitle": "RT",
 				"section": "Russia & Former Soviet Union",
-				"url": "https://www.rt.com/russia/646973-montenegro-russian-blogger-detained/",
+				"url": "https://rt-english.com/russia/646973-montenegro-russian-blogger-detained/",
 				"attachments": [
 					{
 						"title": "Snapshot",
@@ -304,6 +236,112 @@ var testCases = [
 					},
 					{
 						"tag": "Telegram"
+					}
+				],
+				"notes": [],
+				"seeAlso": []
+			}
+		]
+	},
+	{
+		"type": "web",
+		"url": "https://rt-english.com/news/646824-october-7-israel-elections/",
+		"items": [
+			{
+				"itemType": "newspaperArticle",
+				"title": "The October 7 survivors divided on who should rule Israel",
+				"creators": [
+					{
+						"firstName": "Elizabeth",
+						"lastName": "Blade",
+						"creatorType": "author"
+					}
+				],
+				"date": "2026-10-07",
+				"abstractNote": "Three years after the attack, residents near Gaza are torn between demanding Netanyahu’s departure and backing an even harder right",
+				"language": "en",
+				"libraryCatalog": "rt-english.com",
+				"publicationTitle": "RT",
+				"section": "World News",
+				"url": "https://rt-english.com/news/646824-october-7-israel-elections/",
+				"attachments": [
+					{
+						"title": "Snapshot",
+						"mimeType": "text/html"
+					}
+				],
+				"tags": [
+					{
+						"tag": "Feature"
+					}
+				],
+				"notes": [],
+				"seeAlso": []
+			}
+		]
+	},
+	{
+		"type": "web",
+		"url": "https://rt-english.com/shows/crosstalk/646911-international-law-naked-aggression/",
+		"items": [
+			{
+				"itemType": "tvBroadcast",
+				"title": "Surviving empire",
+				"creators": [],
+				"date": "2026-10-09",
+				"abstractNote": "Everything is coming apart at the seams Once long-held assumptions about the international order no longer apply",
+				"language": "en",
+				"libraryCatalog": "rt-english.com",
+				"network": "RT",
+				"programTitle": "CrossTalk",
+				"url": "https://rt-english.com/shows/crosstalk/646911-international-law-naked-aggression/",
+				"attachments": [
+					{
+						"title": "Snapshot",
+						"mimeType": "text/html"
+					}
+				],
+				"tags": [],
+				"notes": [],
+				"seeAlso": []
+			}
+		]
+	},
+	{
+		"type": "web",
+		"url": "https://rt-english.com/news/",
+		"items": "multiple"
+	},
+	{
+		"type": "web",
+		"url": "https://www.rt.com/news/646824-october-7-israel-elections/",
+		"items": [
+			{
+				"itemType": "newspaperArticle",
+				"title": "The October 7 survivors divided on who should rule Israel",
+				"creators": [
+					{
+						"firstName": "Elizabeth",
+						"lastName": "Blade",
+						"creatorType": "author"
+					}
+				],
+				"date": "2026-10-07",
+				"abstractNote": "Three years after the attack, residents near Gaza are torn between demanding Netanyahu’s departure and backing an even harder right",
+				"language": "en",
+				"libraryCatalog": "rt-english.com",
+				"publicationTitle": "RT",
+				"section": "World News",
+				"url": "https://rt-english.com/news/646824-october-7-israel-elections/",
+				"attachments": [
+					{
+						"title": "Snapshot",
+						"mimeType": "text/html"
+					}
+				],
+				"tags": [
+					{
+						"tag": "Feature"
 					}
 				],
 				"notes": [],

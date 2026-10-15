@@ -1,6 +1,6 @@
 # Custom Zotero translators (RT.com, TASS.com, and SputnikGlobe.com)
 
-These three small files teach Zotero how to save articles from **RT (rt.com)**, **TASS (tass.com)**,
+These three small files teach Zotero how to save articles from **RT (rt-english.com)**, **TASS (tass.com)**,
 and **Sputnik International (sputnikglobe.com)**
 properly: with the headline, author, date, section, and tags filled in, instead of a bare "Web Page".
 Once installed, saving an article works exactly like saving from any other news site: click the
@@ -72,7 +72,7 @@ Zotero must be open on your computer while you do this.
 
 ### Step 6: Try it
 
-1. With Zotero open, go to any article on https://www.rt.com, https://tass.com, or
+1. With Zotero open, go to any article on https://rt-english.com, https://tass.com, or
    https://sputnikglobe.com.
 2. Look at the Zotero button in the toolbar. It should now show a **newspaper icon** instead of a
    plain page icon. (Reload the page if it has not changed yet.)

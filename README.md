@@ -5,29 +5,49 @@ properly: with the headline, author, date, section, and tags filled in, instead 
 Once installed, saving an article works exactly like saving from any other news site: click the
 Zotero button in your browser.
 
-| File | Website | What you get |
+### Russia
+
+| File | Outlet and website | What you get |
 |---|---|---|
-| `RT.com.js` | RT's English site at any address: https://rt-english.com today, formerly www.rt.com | Articles saved as **Newspaper Article** items; RT shows (video programs) saved as **TV Broadcast** items; a pick-list of stories on section and search pages |
-| `TASS.com.js` | https://tass.com | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page, section pages, and search pages |
-| `SputnikGlobe.com.js` | https://sputnikglobe.com | Articles, videos, infographics, and long reads saved as **Newspaper Article** items; a pick-list of stories on the home page and on section, tag, archive, and search pages |
-| `RIA.ru.js` | https://ria.ru (Russian-language edition) | Articles saved as **Newspaper Article** items (РИА Новости); a pick-list of stories on the home page and section pages |
-| `TVZvezda.ru.js` | https://tvzvezda.ru (Russian-language news) | Articles saved as **Newspaper Article** items (Телеканал «Звезда»); a pick-list of stories on the home page and section pages |
-| `RG.ru.js` | https://rg.ru (Russian-language edition) | Articles saved as **Newspaper Article** items (Российская газета, with the signed author); a pick-list of stories on the home page and section pages |
-| `News.cn.js` | https://english.news.cn (Xinhua English edition) | Articles saved as **Newspaper Article** items (Xinhua); a pick-list of stories on the home page and section pages |
-| `People.cn.js` | https://en.people.cn (People's Daily Online English edition) | Articles saved as **Newspaper Article** items (People's Daily Online, with the byline when there is one); a pick-list of stories on the home page and section pages |
-| `GlobalTimes.cn.js` | https://www.globaltimes.cn | Articles saved as **Newspaper Article** items (Global Times, with byline and subtitle); a pick-list of stories on the home page and section pages |
-| `ChinaDaily.com.cn.js` | https://www.chinadaily.com.cn (English edition) | Articles saved as **Newspaper Article** items (China Daily, with byline when there is one); a pick-list of stories on the home page and section pages |
-| `ECNS.cn.js` | https://www.ecns.cn (China News Service English edition) | Articles saved as **Newspaper Article** items (China News Service, with section); a pick-list of stories on the home page and section pages |
-| `CGTN.com.js` | https://news.cgtn.com and https://www.cgtn.com | Articles saved as **Newspaper Article** items (CGTN); a pick-list of stories on the home page and section pages |
-| `Ukrinform.net.js` | https://www.ukrinform.net (English edition) | Articles saved as **Newspaper Article** items (Ukrinform); a pick-list of stories on the home page and section pages |
-| `PressTV.co.uk.js` | https://www.presstv.co.uk (English edition; also presstv.ir and presstv.com addresses) | Articles saved as **Newspaper Article** items (Press TV, with section); a pick-list of stories on the home page and section pages |
-| `SCMP.com.js` | https://www.scmp.com (South China Morning Post) | Articles saved as **Newspaper Article** items (author, section, and tags); a pick-list of stories on section pages |
-| `NV.ua.js` | https://english.nv.ua (The New Voice of Ukraine, English edition) | Articles saved as **Newspaper Article** items (with section); a pick-list of stories on the home page and section pages |
-| `IRNA.ir.js` | https://en.irna.ir (Islamic Republic News Agency, English edition) | Articles saved as **Newspaper Article** items (author, section, tags); a pick-list of stories on the home page and search pages |
-| `ChinaMil.com.cn.js` | http://eng.chinamil.com.cn (China Military Online, the PLA Daily English site; it answers on plain `http`) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
+| `RT.com.js` | RT: https://rt-english.com today, formerly www.rt.com (English site at any address) | Articles saved as **Newspaper Article** items; RT shows (video programs) saved as **TV Broadcast** items; a pick-list of stories on section and search pages |
+| `TASS.com.js` | TASS: https://tass.com (English) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page, section pages, and search pages |
+| `SputnikGlobe.com.js` | Sputnik International: https://sputnikglobe.com (English) | Articles, videos, infographics, and long reads saved as **Newspaper Article** items; a pick-list of stories on the home page and on section, tag, archive, and search pages |
+| `RIA.ru.js` | RIA Novosti: https://ria.ru (Russian) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
+| `TVZvezda.ru.js` | TV Zvezda: https://tvzvezda.ru (Russian) | News items saved as **Newspaper Article** items; a pick-list of stories on the news page |
+| `RG.ru.js` | Rossiyskaya Gazeta: https://rg.ru (Russian) | Articles saved as **Newspaper Article** items, with the signed author; a pick-list of stories on the home page and section pages |
+
+### China (including Hong Kong)
+
+| File | Outlet and website | What you get |
+|---|---|---|
+| `News.cn.js` | Xinhua: https://english.news.cn (English) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
+| `People.cn.js` | People's Daily Online: https://en.people.cn (English) | Articles saved as **Newspaper Article** items, with the byline when there is one; a pick-list of stories on the home page and section pages |
+| `GlobalTimes.cn.js` | Global Times: https://www.globaltimes.cn (English) | Articles saved as **Newspaper Article** items, with byline and subtitle; a pick-list of stories on the home page and section pages |
+| `ChinaDaily.com.cn.js` | China Daily: https://www.chinadaily.com.cn (English) | Articles saved as **Newspaper Article** items, with the byline when there is one; a pick-list of stories on the home page and section pages |
+| `ECNS.cn.js` | China News Service: https://www.ecns.cn (English) | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
+| `CGTN.com.js` | CGTN: https://news.cgtn.com and https://www.cgtn.com (English) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
+| `ChinaMil.com.cn.js` | China Military Online, the PLA Daily English site: http://eng.chinamil.com.cn (answers on plain `http`) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
+| `SCMP.com.js` | South China Morning Post (Hong Kong, privately owned): https://www.scmp.com (English) | Articles saved as **Newspaper Article** items with author, section, and tags; a pick-list of stories on section pages |
+
+### Ukraine
+
+| File | Outlet and website | What you get |
+|---|---|---|
+| `Ukrinform.net.js` | Ukrinform: https://www.ukrinform.net (English) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
+| `NV.ua.js` | The New Voice of Ukraine (privately owned): https://english.nv.ua (English) | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
+
+### Iran
+
+| File | Outlet and website | What you get |
+|---|---|---|
+| `IRNA.ir.js` | Islamic Republic News Agency: https://en.irna.ir (English) | Articles saved as **Newspaper Article** items with author, section, and tags; a pick-list of stories on the home page and search pages |
+| `PressTV.co.uk.js` | Press TV: https://www.presstv.co.uk (English; presstv.ir and presstv.com addresses also work) | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
 
 Other-language editions are not covered unless the table says so (RIA, Zvezda, and Rossiyskaya Gazeta are
 Russian-language), and neither are Sputnik's other regional editions, which live on other web addresses.
+
+China Media Group is not included on purpose: it is a holding company for outlets such as CCTV and CGTN, not a news
+source of its own. CGTN is covered above.
 
 ## Before you start
 

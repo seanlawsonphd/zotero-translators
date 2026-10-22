@@ -27,6 +27,7 @@ Zotero button in your browser.
 | `ECNS.cn.js` | China News Service: https://www.ecns.cn (English) | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
 | `CGTN.com.js` | CGTN: https://news.cgtn.com and https://www.cgtn.com (English) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
 | `ChinaMil.com.cn.js` | China Military Online, the PLA Daily English site: http://eng.chinamil.com.cn (answers on plain `http`) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
+| `CCTV.com.js` | CCTV English: https://english.cctv.com (articles and videos) | Stories saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
 | `SCMP.com.js` | South China Morning Post (Hong Kong, privately owned): https://www.scmp.com (English) | Articles saved as **Newspaper Article** items with author, section, and tags; a pick-list of stories on section pages |
 
 ### Ukraine
@@ -35,6 +36,7 @@ Zotero button in your browser.
 |---|---|---|
 | `Ukrinform.net.js` | Ukrinform: https://www.ukrinform.net (English) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
 | `NV.ua.js` | The New Voice of Ukraine (privately owned): https://english.nv.ua (English) | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
+| `MOD.gov.ua.js` | Ministry of Defence of Ukraine: https://mod.gov.ua/en (a government site, saved as a news item) | News items saved with section and tags; a pick-list of items on the news page |
 
 ### Iran
 
@@ -42,6 +44,17 @@ Zotero button in your browser.
 |---|---|---|
 | `IRNA.ir.js` | Islamic Republic News Agency: https://en.irna.ir (English) | Articles saved as **Newspaper Article** items with author, section, and tags; a pick-list of stories on the home page and search pages |
 | `PressTV.co.uk.js` | Press TV: https://www.presstv.co.uk (English; presstv.ir and presstv.com addresses also work) | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
+| `TehranTimes.com.js` | Tehran Times: https://www.tehrantimes.com (English) | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
+| `TasnimNews.ir.js` | Tasnim News Agency: https://www.tasnimnews.ir/en (English; the address is .ir, not .com) | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the English home page and section pages |
+| `FarsNews.ir.js` | Fars News Agency: https://farsnews.ir, English stories listed at https://farsnews.ir/showcase?lang=en (the site is Persian-first) | English stories saved as **Newspaper Article** items, with the author; a pick-list on the English showcase page. Persian pages are not saved |
+
+### Israel
+
+| File | Outlet and website | What you get |
+|---|---|---|
+| `IsraelNationalNews.com.js` | Arutz Sheva / Israel National News (religious-Zionist right): https://www.israelnationalnews.com (English) | Articles saved as **Newspaper Article** items, with author and section; a pick-list of stories on the home page and section pages |
+| `C14News.com.js` | Channel 14 (pro-Netanyahu): https://www.c14news.com (English edition) | Articles saved as **Newspaper Article** items, with author and tags; a pick-list of stories on the home page and section pages |
+| `I24News.tv.js` | i24NEWS: https://www.i24news.tv/en | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
 
 Other-language editions are not covered unless the table says so (RIA, Zvezda, and Rossiyskaya Gazeta are
 Russian-language), and neither are Sputnik's other regional editions, which live on other web addresses.

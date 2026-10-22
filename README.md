@@ -1,7 +1,6 @@
-# Custom Zotero translators (RT.com, TASS.com, and SputnikGlobe.com)
+# Custom Zotero translators for state and state-aligned news sites
 
-These three small files teach Zotero how to save articles from **RT (rt-english.com)**, **TASS (tass.com)**,
-and **Sputnik International (sputnikglobe.com)**
+These small files teach Zotero how to save articles from the news sites listed below
 properly: with the headline, author, date, section, and tags filled in, instead of a bare "Web Page".
 Once installed, saving an article works exactly like saving from any other news site: click the
 Zotero button in your browser.
@@ -11,9 +10,20 @@ Zotero button in your browser.
 | `RT.com.js` | RT's English site at any address: https://rt-english.com today, formerly www.rt.com | Articles saved as **Newspaper Article** items; RT shows (video programs) saved as **TV Broadcast** items; a pick-list of stories on section and search pages |
 | `TASS.com.js` | https://tass.com | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page, section pages, and search pages |
 | `SputnikGlobe.com.js` | https://sputnikglobe.com | Articles, videos, infographics, and long reads saved as **Newspaper Article** items; a pick-list of stories on the home page and on section, tag, archive, and search pages |
+| `RIA.ru.js` | https://ria.ru (Russian-language edition) | Articles saved as **Newspaper Article** items (РИА Новости); a pick-list of stories on the home page and section pages |
+| `TVZvezda.ru.js` | https://tvzvezda.ru (Russian-language news) | Articles saved as **Newspaper Article** items (Телеканал «Звезда»); a pick-list of stories on the home page and section pages |
+| `RG.ru.js` | https://rg.ru (Russian-language edition) | Articles saved as **Newspaper Article** items (Российская газета, with the signed author); a pick-list of stories on the home page and section pages |
+| `News.cn.js` | https://english.news.cn (Xinhua English edition) | Articles saved as **Newspaper Article** items (Xinhua); a pick-list of stories on the home page and section pages |
+| `People.cn.js` | https://en.people.cn (People's Daily Online English edition) | Articles saved as **Newspaper Article** items (People's Daily Online, with the byline when there is one); a pick-list of stories on the home page and section pages |
+| `GlobalTimes.cn.js` | https://www.globaltimes.cn | Articles saved as **Newspaper Article** items (Global Times, with byline and subtitle); a pick-list of stories on the home page and section pages |
+| `ChinaDaily.com.cn.js` | https://www.chinadaily.com.cn (English edition) | Articles saved as **Newspaper Article** items (China Daily, with byline when there is one); a pick-list of stories on the home page and section pages |
+| `ECNS.cn.js` | https://www.ecns.cn (China News Service English edition) | Articles saved as **Newspaper Article** items (China News Service, with section); a pick-list of stories on the home page and section pages |
+| `CGTN.com.js` | https://news.cgtn.com and https://www.cgtn.com | Articles saved as **Newspaper Article** items (CGTN); a pick-list of stories on the home page and section pages |
+| `Ukrinform.net.js` | https://www.ukrinform.net (English edition) | Articles saved as **Newspaper Article** items (Ukrinform); a pick-list of stories on the home page and section pages |
+| `PressTV.co.uk.js` | https://www.presstv.co.uk (English edition; also presstv.ir and presstv.com addresses) | Articles saved as **Newspaper Article** items (Press TV, with section); a pick-list of stories on the home page and section pages |
 
-The Spanish, French, Arabic, and Russian editions of these sites are not covered, and neither are
-Sputnik's other regional editions, which live on other web addresses.
+Other-language editions are not covered unless the table says so (RIA, Zvezda, and Rossiyskaya Gazeta are
+Russian-language), and neither are Sputnik's other regional editions, which live on other web addresses.
 
 ## Before you start
 
@@ -29,8 +39,7 @@ Open Zotero at least once so that it creates its folders.
 
 ### Step 1: Download the file
 
-1. On this page, click the file you want: **`RT.com.js`**, **`TASS.com.js`**, or
-   **`SputnikGlobe.com.js`**.
+1. On this page, click the file you want: the translator for the site you want, for example **`RT.com.js`**.
 2. On the page that opens, look for the small **download icon** (an arrow pointing down into a tray)
    near the top right of the file, labeled **Download raw file** when you hover over it. Click it.
 3. The file lands in your **Downloads** folder. Make sure its name still ends in **`.js`**
@@ -72,8 +81,7 @@ Zotero must be open on your computer while you do this.
 
 ### Step 6: Try it
 
-1. With Zotero open, go to any article on https://rt-english.com, https://tass.com, or
-   https://sputnikglobe.com.
+1. With Zotero open, go to any article on one of the sites in the table above.
 2. Look at the Zotero button in the toolbar. It should now show a **newspaper icon** instead of a
    plain page icon. (Reload the page if it has not changed yet.)
 3. Click the button. The article appears in your Zotero library with its title, date, and other
@@ -101,7 +109,7 @@ list of all the stories on that page with checkboxes, so you can save several at
 
 | What you see | What to check |
 |---|---|
-| The Zotero button still shows a plain page icon on an RT, TASS, or Sputnik article | Confirm the file is inside the `translators` folder and its name ends in `.js`; confirm you fully quit and reopened Zotero; do Step 5 again; reload the page |
+| The Zotero button still shows a plain page icon on an article from one of these sites | Confirm the file is inside the `translators` folder and its name ends in `.js`; confirm you fully quit and reopened Zotero; do Step 5 again; reload the page |
 | "Update Translators" seems to do nothing | Make sure the Zotero desktop app is open, then try again |
 | You cannot find the Options or Preferences entry | In Chrome, you can also open `chrome://extensions`, find Zotero Connector, click **Details**, then **Extension options**. In Firefox, open the menu → **Add-ons and themes**, find Zotero Connector, and open its **Preferences** tab |
 | Saving works but no page copy is attached | You saved several items at once; see "Things to know" above |

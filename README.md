@@ -21,6 +21,8 @@ Zotero button in your browser.
 | `CGTN.com.js` | https://news.cgtn.com and https://www.cgtn.com | Articles saved as **Newspaper Article** items (CGTN); a pick-list of stories on the home page and section pages |
 | `Ukrinform.net.js` | https://www.ukrinform.net (English edition) | Articles saved as **Newspaper Article** items (Ukrinform); a pick-list of stories on the home page and section pages |
 | `PressTV.co.uk.js` | https://www.presstv.co.uk (English edition; also presstv.ir and presstv.com addresses) | Articles saved as **Newspaper Article** items (Press TV, with section); a pick-list of stories on the home page and section pages |
+| `SCMP.com.js` | https://www.scmp.com (South China Morning Post) | Articles saved as **Newspaper Article** items (author, section, and tags); a pick-list of stories on section pages |
+| `NV.ua.js` | https://english.nv.ua (The New Voice of Ukraine, English edition) | Articles saved as **Newspaper Article** items (with section); a pick-list of stories on the home page and section pages |
 
 Other-language editions are not covered unless the table says so (RIA, Zvezda, and Rossiyskaya Gazeta are
 Russian-language), and neither are Sputnik's other regional editions, which live on other web addresses.

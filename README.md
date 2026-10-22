@@ -23,6 +23,8 @@ Zotero button in your browser.
 | `PressTV.co.uk.js` | https://www.presstv.co.uk (English edition; also presstv.ir and presstv.com addresses) | Articles saved as **Newspaper Article** items (Press TV, with section); a pick-list of stories on the home page and section pages |
 | `SCMP.com.js` | https://www.scmp.com (South China Morning Post) | Articles saved as **Newspaper Article** items (author, section, and tags); a pick-list of stories on section pages |
 | `NV.ua.js` | https://english.nv.ua (The New Voice of Ukraine, English edition) | Articles saved as **Newspaper Article** items (with section); a pick-list of stories on the home page and section pages |
+| `IRNA.ir.js` | https://en.irna.ir (Islamic Republic News Agency, English edition) | Articles saved as **Newspaper Article** items (author, section, tags); a pick-list of stories on the home page and search pages |
+| `ChinaMil.com.cn.js` | http://eng.chinamil.com.cn (China Military Online, the PLA Daily English site; it answers on plain `http`) | Articles saved as **Newspaper Article** items; a pick-list of stories on the home page and section pages |
 
 Other-language editions are not covered unless the table says so (RIA, Zvezda, and Rossiyskaya Gazeta are
 Russian-language), and neither are Sputnik's other regional editions, which live on other web addresses.
@@ -130,6 +132,14 @@ documents the full workflow.
 
 `./install.sh [RT.com.js ...]` copies translators into the Zotero data directory on macOS
 (`--force` overwrites existing copies).
+
+### Notes on testing the IRNA translator
+
+IRNA's site hands automated browsers a script gate that never completes, so the IRNA test cases were recorded
+and run against saved copies of three real pages (an article, the home page, and a search page), served
+locally under the real `en.irna.ir` address. The translator has not been tested against the live site by an
+automated browser. If you re-run its tests with the standard tools they will fail at that gate, not because of
+the translator.
 
 ## License
 

@@ -55,6 +55,11 @@ Zotero button in your browser.
 | `IsraelNationalNews.com.js` | Arutz Sheva / Israel National News (religious-Zionist right): https://www.israelnationalnews.com (English) | Articles saved as **Newspaper Article** items, with author and section; a pick-list of stories on the home page and section pages |
 | `C14News.com.js` | Channel 14 (pro-Netanyahu): https://www.c14news.com (English edition) | Articles saved as **Newspaper Article** items, with author and tags; a pick-list of stories on the home page and section pages |
 | `I24News.tv.js` | i24NEWS: https://www.i24news.tv/en | Articles saved as **Newspaper Article** items, with section; a pick-list of stories on the home page and section pages |
+| `IsraelHayom.com.js` | Israel Hayom (pro-Netanyahu): https://www.israelhayom.com (English) | Articles saved as **Newspaper Article** items, with the byline, section, and subtitle; a pick-list of stories on the home page and section pages |
+
+Kan (Israel's public broadcaster) is not included: its English content is radio on the Reka network, not
+written articles. Israel Hayom's site gates automated browsers, so its tests were recorded and run with the
+tooling's `--headed` option (a visible Chrome window); saving from your own browser is unaffected.
 
 Other-language editions are not covered unless the table says so (RIA, Zvezda, and Rossiyskaya Gazeta are
 Russian-language), and neither are Sputnik's other regional editions, which live on other web addresses.
